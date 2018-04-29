@@ -2,31 +2,35 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.westeroscraft</groupId>
   <artifactId>PackXZExtract</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <name>PackXZExtract</name>
   <description>Utility to decompress and extract jar files from .pack.xz format.</description>
+  <url>https://gitlab.com/westeroscraft/PackXZExtract</url>
+  
   <developers>
   	<developer>
          <name>Daniel Scalzi (TheKraken7)</name>
       </developer>
   </developers>
+  
   <build>
-    <sourceDirectory>src</sourceDirectory>
     <defaultGoal>package</defaultGoal>
     <finalName>PackXZExtract</finalName>
     <plugins>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.5.1</version>
+        <version>3.7.0</version>
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
         </configuration>
       </plugin>
+      
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
-        <version>2.4.3</version>
+        <version>3.1.0</version>
         <executions>
           <execution>
             <phase>package</phase>
@@ -37,7 +41,10 @@
 	          <transformers>
 	            <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
 	              <mainClass>com.westeroscraft.PXZEMain</mainClass>
-	            </transformer>
+-	              <manifestEntries>
+-	                <Implementation-Version>${project.version}</Implementation-Version>
+-	              </manifestEntries>
+-	            </transformer>
 	          </transformers>
             </configuration>
           </execution>
@@ -45,6 +52,7 @@
       </plugin>
     </plugins>
   </build>
+  
   <dependencies>
   	<dependency>
   		<groupId>org.tukaani</groupId>
@@ -52,4 +60,5 @@
   		<version>1.6</version>
   	</dependency>
   </dependencies>
+  
 </project>
