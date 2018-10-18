@@ -4,9 +4,9 @@
   <groupId>com.westeroscraft</groupId>
   <artifactId>PackXZExtract</artifactId>
   <name>PackXZExtract</name>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <description>Utility to decompress and extract jar files from .pack.xz format.</description>
-  <url>https://gitlab.com/westeroscraft/PackXZExtract</url>
+  <url>https://github.com/WesterosCraftCode/PackXZExtract</url>
   <developers>
     <developer>
       <name>Daniel Scalzi (TheKraken7)</name>
@@ -18,7 +18,7 @@
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.7.0</version>
+        <version>3.8.0</version>
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
@@ -26,7 +26,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-shade-plugin</artifactId>
-        <version>3.1.0</version>
+        <version>3.2.0</version>
         <executions>
           <execution>
             <phase>package</phase>
@@ -49,4 +49,3 @@
     </plugins>
   </build>
 </project>
-

@@ -2,10 +2,10 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.westeroscraft</groupId>
   <artifactId>PackXZExtract</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <name>PackXZExtract</name>
   <description>Utility to decompress and extract jar files from .pack.xz format.</description>
-  <url>https://gitlab.com/westeroscraft/PackXZExtract</url>
+  <url>https://github.com/WesterosCraftCode/PackXZExtract</url>
   
   <developers>
   	<developer>
@@ -20,7 +20,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.7.0</version>
+        <version>3.8.0</version>
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
@@ -30,7 +30,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
-        <version>3.1.0</version>
+        <version>3.2.0</version>
         <executions>
           <execution>
             <phase>package</phase>
@@ -57,7 +57,7 @@
   	<dependency>
   		<groupId>org.tukaani</groupId>
   		<artifactId>xz</artifactId>
-  		<version>1.6</version>
+  		<version>1.8</version>
   	</dependency>
   </dependencies>
   
