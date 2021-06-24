@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.dscalzi</groupId>
   <artifactId>PackXZExtract</artifactId>
-  <version>1.1.0</version>
+  <version>1.2.0</version>
   <name>PackXZExtract</name>
   <description>Utility to decompress and extract jar files from .pack.xz format.</description>
   <url>https://github.com/dscalzi/PackXZExtract</url>
@@ -34,7 +34,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
-        <version>3.2.0</version>
+        <version>3.2.4</version>
         <executions>
           <execution>
             <phase>package</phase>
@@ -61,7 +61,7 @@
   	<dependency>
   		<groupId>org.tukaani</groupId>
   		<artifactId>xz</artifactId>
-  		<version>1.8</version>
+  		<version>1.9</version>
   	</dependency>
   </dependencies>
   
